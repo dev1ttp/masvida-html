@@ -1,0 +1,16 @@
+.btn-menu {
+    @include menu-button ($blue-button);
+}
+
+.btn-login {}
+
+.btn-back {
+    @include circle-button ($blue-button);
+    i {
+        font-size: 6rem
+    }
+}
+
+.btn-out {
+    @include circle-button ($blue-button);
+}

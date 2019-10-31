@@ -1,0 +1,55 @@
+@mixin gob-font-100 {
+    font-family: Roboto;
+    line-height: 110%;
+}
+
+@mixin gob-font-300 {
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+@mixin gob-font-600 {
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+@mixin gob-font-800 {
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+@mixin circle-button ($color-base) {
+    width: 350px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: ($color-base);
+    border: none;
+    color: $text-button;
+    font-size: $font-small;
+    @include gob-font-600;
+    &:focus {
+        border: $blue-button;
+        outline: none;
+    }
+}
+
+@mixin menu-button ($color-base) {
+    width: 100%;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 40px;
+    background-color: ($color-base);
+    border: none;
+    color: $text-button;
+    font-size: $font-button;
+    @include gob-font-600;
+}
+
+@mixin sombra {
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}

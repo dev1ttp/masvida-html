@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Consalud</title>
+</head>
+
+<body class="w-100">
+
+    <div class="row text-center">
+        <div class="col-12">
+            <div class="barra">
+                <div class="row">
+                    <div class="col-3 logo ">
+                        <img src="img/logo-barra.png">
+                    </div>
+
+                    <div class="col-2 offset-6 text-right mt-5">
+                        <div class="sup-right">
+                            <div class="row">
+                                <div class="col-6 compras text-center"><img src="img/compras.png"></div>
+                                <div class="col-6 salir">
+                                    <button onClick="window.location='login.html';">Salir</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class=" col-8 offset-2 mt-3 ">
+            <h1 class="menu-nombre bounceIn delay-800ms font-weight-bold mb-5 ">Certificados</h1>
+
+
+        </div>
+
+        <div class="row ">
+            <div class="col-10 offset-1 mb-5 ">
+                <hr class="mb-5 ">
+                <span class="menu-title-medium bounceIn delay-800ms ">Selecciona el certificado que necesitas</span>
+            </div>
+
+            <!-- Modal -->
+
+
+
+
+            <div class="row mt-4 ">
+                <div class="col-4 mb-4 ">
+                    <a href="# " data-toggle="modal" data-target="#exampleModal">
+                        <div class="button-card float-right animated bounceInUp faster ">
+                            <div class="box "><img src="img/afiliacion-carga.png "></div>
+                            <p class="fix-two-line ">Afiliación de Carga</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-4 mb-5 ">
+                    <a href="# " data-toggle="modal" data-target="#exampleModal">
+                        <div class="button-card mx-auto animated bounceInUp faster ">
+                            <div class="box "><img src="img/afiliacion.png "></div>
+                            <p>Afiliación</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4 mb-5 ">
+                    <a href="# " data-toggle="modal" data-target="#exampleModal">
+                        <div class="button-card float-left animated bounceInUp faster ">
+                            <div class="box "><img src="img/excedentes.png "></div>
+                            <p>
+                                Excedentes
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4 mb-5 mt-4 ">
+                    <a href="# " data-toggle="modal" data-target="#exampleModal">
+                        <div class="button-card float-right animated bounceInUp faster ">
+                            <div class="box "><img src="img/cotizaciones.png "></div>
+                            <p>Cotizaciones</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-4 mb-5 mt-4 ">
+                    <a href="# " data-toggle="modal" data-target="#exampleModal">
+                        <div class="button-card mx-auto animated bounceInUp faster ">
+                            <div class="box "><img src="img/excesos.png "></div>
+                            <p>Excesos</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4 mb-5 mt-4 ">
+                    <a href="# " data-toggle="modal" data-target="#exampleModal">
+                        <div class="button-card float-left animated bounceInUp faster ">
+                            <div class="box "><img src="img/deudas.png "></div>
+                            <p>
+                                Deudas
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4 mb-4 mt-4 offset-4 ">
+                    <a href="# " data-toggle="modal" data-target="#exampleModal">
+                        <div class="button-card ml-5 animated bounceInUp faster float-center ">
+                            <div class="box "><img src="img/licencias.png "></div>
+                            <p>
+                                Licencias
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="row">
+                <div class="col-6 offset-3">
+
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+
+                            <div class="scan h-75">
+                                <p class="mt-2 mb-2">Elige una opción</p>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-5 line-right ">
+                                        <img src="./img/calendar.png" class="w-50 mx-auto mt-5 animated bounceIn">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="row pr-3">
+                                            <div class="col-12"> <input type="radio" name="aaaa" id="vista">
+                                                <label class="label-modal" for="vista"> 12 Meses</label>
+                                                <hr>
+                                            </div>
+                                            <div class="col-12"> <input type="radio" name="aaaa" id="vista">
+                                                <label class="label-modal" for="vista"> 24 Meses</label>
+                                                <hr>
+                                            </div>
+                                            <div class="col-12"> <input type="radio" name="aaaa" id="vista">
+                                                <label class="label-modal" for="vista"> 36 Meses</label></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                        <div class="row min-ico">
+
+                                            <div class="col-4 line-right">
+                                                <a href="#"><img class="animated bounceIn delay-500ms" src="./img/eye-medium.png">
+                                                    <p>Visualizar</p>
+                                                </a>
+                                            </div>
+
+
+                                            <div class="col-4 line-right">
+                                                <a href="#"><img class="animated bounceIn  delay-650ms" src="./img/mail-medium.png">
+                                                    <p>Email</p>
+                                                </a>
+                                            </div>
+                                            </a>
+
+                                            <div class="col-4">
+                                                <a href="#"><img class="animated bounceIn  delay-800ms" src="./img/file-medium.png">
+                                                    <p>Imprimir</p>
+                                                </a>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <hr>
+                                        <button class="btn-login volver mt-1 mb-4 animated bounceIn delay-200ms" type="submit " data-dismiss="modal">
+          
+                                                 <img src="./img/back.png "> Volver</button>
+
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="pr-0 ">
+            <div class="row menu-footer ">
+                <div class="col-2 ">
+                    <a href="menu.html"><img src="img/home.png ">
+                        <p>Inicio</p>
+                    </a>
+                </div>
+                <div class="col-2 ">
+                    <a href="reembolso-p1.html"><img src="img/rembolso.png ">
+                        <p>Reembolso</p>
+                    </a>
+                </div>
+                <div class="col-2 ">
+                    <a href="bonos-p1.html"><img src="img/bonos.png ">
+                        <p>Bonos</p>
+                    </a>
+                </div>
+                <div class="col-2 ">
+                    <a href="certificados-p1.html"><img src="img/certificados.png ">
+                        <p>Certificados</p>
+                    </a>
+                    <div class="line-active"></div>
+                </div>
+                <div class="col-2 ">
+                    <a href="contrato-p1.html"><img src="img/contrato.png ">
+                        <p>Mi Contrato</p>
+                    </a>
+                </div>
+                <div class="col-2 ">
+                    <a href="mis-beneficios-p1.html"><img src="img/beneficios.png ">
+                        <p>Mis Beneficios</p>
+                    </a>
+                </div>
+
+            </div>
+            <div class="yellow "></div>
+            <div class="blue ">
+                <p>Mis Excendentes</p>
+                <p class="exceden-footer ">$31.665</p>
+            </div>
+
+
+        </footer>
+
+
+
+</body>
+<script src="js/jquery-1.11.1.js "></script>
+<script src="js/bootstrap/bootstrap.min.js "></script>
+
+</html>
