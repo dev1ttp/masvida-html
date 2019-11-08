@@ -1,28 +1,24 @@
-@mixin font-light {
-    font-family: 'Merriweather Sans', sans-serif;
-    font-weight: 300;
+@mixin gob-font-100 {
+    font-family: gobCl;
+    line-height: 110%;
 }
 
-@mixin font-regular {
-    font-family: 'Merriweather Sans', sans-serif;
+@mixin gob-font-300 {
+    font-family: gobCl;
     font-weight: 400;
+    line-height: 110%;
 }
 
-@mixin font-bold {
-    font-family: 'Merriweather Sans', sans-serif;
-    font-weight: 700;
+@mixin gob-font-600 {
+    font-family: gobCl;
+    font-weight: 600;
+    line-height: 110%;
 }
 
-@mixin button-corfo {
-    height: 108px;
-    background-color: $rojo-corfo;
-    width: 100%;
-    color: $blanco;
-    border: none;
-    font-size: 3.4rem;
-    padding-left: 1rem;
-    ;
-    @include font-light;
+@mixin gob-font-800 {
+    font-family: gobCl;
+    font-weight: 600;
+    line-height: 110%;
 }
 
 @mixin circle-button ($color-base, $color-borde) {
@@ -33,6 +29,7 @@
     border: 10px solid ($color-borde);
     color: $text-button;
     font-size: $font-button;
+    @include gob-font-600;
     &:focus {
         background-color: ($color-borde);
         outline: none;
@@ -48,4 +45,5 @@
     border: 10px solid ($color-borde);
     color: $text-button;
     font-size: $font-button;
+    @include gob-font-600;
 }

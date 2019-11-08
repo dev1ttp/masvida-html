@@ -5,7 +5,6 @@
 body {
     overflow: hidden;
     height: 100%;
-    width: 100%;
 }
 
 a:link {
@@ -28,96 +27,25 @@ body {
     margin: 0;
     height: 100%;
     margin-bottom: 300px;
-    max-width: 1080px;
-}
-
-.index-background {
-    width: 100vw;
-    height: 100vh
-}
-
-.rotate {
-    transform: rotate(180deg);
-}
-
-.margin-titles {
-    margin-top: 30%
-}
-
-.back {
-    &-inicio {
-        background-image: url("../img/background/inicio.jpg");
-        background-repeat: no-repeat;
-    }
-    &-yo-soy {
-        background-image: url("../img/background/yo_soy.jpg");
-        background-repeat: no-repeat;
-    }
-    &-yo-quiero {
-        background-image: url("../img/background/yo_quiero.jpg");
-        background-repeat: no-repeat;
-    }
-    &-apoyo {
-        background-image: url("../img/background/apoyo.jpg");
-        background-repeat: no-repeat;
-    }
-    &-programas {
-        background-image: url("../img/background/programas.jpg");
-        background-repeat: no-repeat;
-    }
-}
-
-.img-triangle {
-    width: 20px
-}
-
-input {
-    display: none
-}
-
-.yosoy-img {
-    width: 470px;
-}
-
-.button-img {
-    height: 130px;
+    @include gob-font-300;
 }
 
 .title-welcome {
-    @include font-light;
-    color: $azul-corfo;
-    font-size: 4rem;
+    font-size: $font-dipreca-big;
+    color: $blue-button;
+    @include gob-font-600;
 }
 
-.tittle-bajada {
-    @include font-light;
-    color: $gris-corfo;
-    font-size: 2.5rem;
-    line-height: 120%;
+.tittle-dipreca {
+    font-size: $font-dipreca;
+    color: $blue-button;
+    @include gob-font-600;
 }
 
-.subtitle {
-    @include font-bold;
-    color: $azul-corfo;
-    font-size: 3rem;
-}
-
-.subtitle-small {
-    @include font-light;
-    color: $gris-corfo;
-    font-size: 2rem;
-}
-
-.title-programa {
-    @include font-regular;
-    text-transform: uppercase;
-    color: $gris-corfo;
-    font-size: 3.2rem;
-    line-height: 110%;
-}
-
-.box-title-programa {
-    height: 105px;
+.welcome {
+    @include gob-font-100;
+    color: $blue-button;
+    font-size: $font-dipreca-big;
 }
 
 hr {
@@ -131,9 +59,9 @@ footer {
     width: 100%;
     height: 300px;
     color: white;
-    // img {
-    //     width: 200px;
-    // }
+    img {
+        width: 200px;
+    }
     .no-button {
         margin-top: 272px
     }
@@ -161,6 +89,7 @@ footer {
         font-size: $font-dipreca;
         border: 3px solid;
         color: $grey-font;
+        @include gob-font-100;
     }
     .form-control:focus {
         z-index: 2;
@@ -174,12 +103,13 @@ footer {
         border: 5px solid $blue-button-dark;
         color: $text-button;
         font-size: $font-dipreca;
+        @include gob-font-600;
     }
 }
 
 .modal {
     &-content {
-        border: 10px solid $rojo-corfo;
+        border: 10px solid $blue-button;
         margin-top: 60%;
     }
     &-dialog {
@@ -188,14 +118,17 @@ footer {
     p {
         color: $blue-button;
         font-size: $font-button;
+        @include gob-font-600;
     }
     span {
+        @include gob-font-100;
         font-size: $font-dipreca;
         color: $grey-font
     }
 }
 
 .menu-text {
+    @include gob-font-600;
     font-size: $font-button;
     color: $grey-font
 }
@@ -209,108 +142,27 @@ footer {
     }
 }
 
-.box-check {
-    @include font-light;
-    border: 5px solid $rojo-corfo;
-    padding: 1.8REM;
-    width: 100%;
-    color: $gris-corfo;
-    cursor: pointer;
-    font-size: 2.3rem;
-    margin-top: -5px;
-    line-height: 120%;
-    transition-duration: 500ms;
-}
-
-.box-programa {
-    border: 5px solid $rojo-corfo;
-    width: 100%;
-    margin-top: 20px;
-    max-height: 160px;
-    &-title {
-        background-color: $rojo-corfo;
-        height: 100%;
-        max-height: 150px;
-        display: flex;
-        justify-content: LEFT;
-        padding-left: 1rem;
-        @include font-light;
-        align-items: center;
-        color: $blanco;
-        text-align: left;
-    }
-    &-text {
-        @include font-regular;
-        font-size: 1.5rem;
-        line-height: 100%;
-        text-align: justify;
-        padding-right: 5%;
-        padding-top: 1%;
-        height: 20px;
-        overflow: hidden;
-        word-break: break-all;
-        height: 100%;
-        max-height: 150px;
-        color: $darkgrey-corfo;
-    }
-}
-
-.box-check:visited {
-    background-color: $azul-corfo;
-    color: $blanco;
-    transition-duration: 500ms;
-    opacity: .5;
-}
-
-.modal-header {
-    background-color: $rojo-corfo;
-    border-radius: 0;
-    @include font-regular;
-    color: $blanco;
-    text-align: center!important;
-}
-
-.back-red {
-    background-color: $rojo-corfo;
-}
-
-.modal-body {
-    @include font-regular;
-    color: $darkgrey-corfo;
-    font-size: 1.3rem;
-}
-
-.modal-footer {
-    justify-content: center;
-}
-
-.modal-backdrop {
-    background-color: $blanco;
-}
-
-.active {
-    background-color: $rojo-corfo;
-    color: $blanco;
-    transition-duration: 500ms;
-}
-
-label {
-    display: block;
-    margin-bottom: 0
-}
-
-.imagenes-programas {
-    height: 356px;
-    background-size: 100%;
-    background-position-y: center;
-}
-
-.more {
-    a:link,
-    a:visited {
-        color: $rojo-corfo;
-        @include font-bold;
-    }
+.spinner-border {
+    width: 10rem;
+    height: 10rem;
+    border: 2.25em solid $blue-button;
+    border-top-color: $blue-button;
+    border-top-style: solid;
+    border-top-width: 2.25em;
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-right-width: 2.25em;
+    border-bottom-color: $blue-button;
+    border-bottom-style: solid;
+    border-bottom-width: 2.25em;
+    border-left-color: $blue-button;
+    border-left-style: solid;
+    border-left-width: 2.25em;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
 }
 
 @import "responsive.scss";
