@@ -1,16 +1,37 @@
 .btn-menu {
-    @include menu-button ($blue-button);
+    @include menu-button ($blue-button, $blue-button-dark);
+}
+
+.button-corfo {
+    @include button-corfo;
+}
+
+.button-corfo:hover {
+    @include button-corfo;
+    transform: scale(1.01);
+}
+
+.triangle {
+    width: 1.5rem;
+    // position: absolute;
+    margin-top: -10px;
+    left: 0;
+    display: inline;
+}
+
+.red {
+    margin-top: 65%
 }
 
 .btn-login {}
 
 .btn-back {
-    @include circle-button ($blue-button);
+    @include circle-button ($blue-button, $blue-button-dark);
     i {
         font-size: 6rem
     }
 }
 
 .btn-out {
-    @include circle-button ($blue-button);
+    @include circle-button ($red-button, $red-button-dark);
 }

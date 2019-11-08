@@ -1,55 +1,51 @@
-@mixin gob-font-100 {
-    font-family: Roboto;
-    line-height: 110%;
+@mixin font-light {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 300;
 }
 
-@mixin gob-font-300 {
-    font-family: Roboto;
+@mixin font-regular {
+    font-family: 'Merriweather Sans', sans-serif;
     font-weight: 400;
-    line-height: 110%;
 }
 
-@mixin gob-font-600 {
-    font-family: Roboto;
-    font-weight: 600;
-    line-height: 110%;
+@mixin font-bold {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
 }
 
-@mixin gob-font-800 {
-    font-family: Roboto;
-    font-weight: 600;
-    line-height: 110%;
-}
-
-@mixin circle-button ($color-base) {
-    width: 350px;
-    height: 100px;
-    border-radius: 50px;
-    background-color: ($color-base);
+@mixin button-corfo {
+    height: 108px;
+    background-color: $rojo-corfo;
+    width: 100%;
+    color: $blanco;
     border: none;
+    font-size: 3.4rem;
+    padding-left: 1rem;
+    ;
+    @include font-light;
+}
+
+@mixin circle-button ($color-base, $color-borde) {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: ($color-base);
+    border: 10px solid ($color-borde);
     color: $text-button;
-    font-size: $font-small;
-    @include gob-font-600;
+    font-size: $font-button;
     &:focus {
-        border: $blue-button;
+        background-color: ($color-borde);
         outline: none;
     }
 }
 
-@mixin menu-button ($color-base) {
+@mixin menu-button ($color-base, $color-borde) {
     width: 100%;
     height: 150px;
     margin-top: 10%;
-    border-radius: 40px;
+    border-radius: 9px;
     background-color: ($color-base);
-    border: none;
+    border: 10px solid ($color-borde);
     color: $text-button;
     font-size: $font-button;
-    @include gob-font-600;
-}
-
-@mixin sombra {
-    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
-    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
 }
