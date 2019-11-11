@@ -1,3 +1,4 @@
+/*------------------------*/
 @font-face {
   font-family: "gobCL";
   font-style: normal;
@@ -119,17 +120,28 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 300px;
+  height: 3rem;
   color: white; }
   footer img {
     width: 200px; }
   footer .no-button {
     margin-top: 272px; }
 
+.footer-blue {
+  background-color: #0085CA;
+  height: 2rem;
+  width: 100vw; }
+.footer-grey {
+  background-color: #505050;
+  height: 1rem;
+  width: 100vw; }
+
 .logo {
-  width: 150px;
-  margin-top: 20%;
-  margin-bottom: 120%; }
+  background-color: #0085CA;
+  height: 10rem; }
+  .logo img {
+    width: 16rem;
+    margin-top: 2.5rem; }
 
 .form-signin {
   width: 100%;
@@ -146,23 +158,25 @@ footer {
     margin-top: 50px;
     font-size: 2rem;
     border: 3px solid;
-    color: #AFAFAF;
+    color: #505050;
     font-family: gobCl;
     line-height: 110%; }
   .form-signin .form-control:focus {
     z-index: 2; }
   .form-signin .btn-login {
     width: 250px;
-    height: 75px;
+    height: 95px;
     margin-top: 10%;
-    border-radius: 25px;
-    background-color: #00549C;
-    border: 5px solid #00386E;
+    border-radius: 15px;
+    background-color: #0085CA;
+    border: none;
     color: #ffffff;
     font-size: 2rem;
     font-family: gobCl;
     font-weight: 600;
     line-height: 110%; }
+  .form-signin .volver {
+    background-color: #505050; }
 
 .modal-content {
   border: 10px solid #00549C;
@@ -194,28 +208,6 @@ footer {
   .select-detail:active {
     color: #00549C;
     transform: scale(1.2); }
-
-.spinner-border {
-  width: 10rem;
-  height: 10rem;
-  border: 2.25em solid #00549C;
-  border-top-color: #00549C;
-  border-top-style: solid;
-  border-top-width: 2.25em;
-  border-right-color: transparent;
-  border-right-style: solid;
-  border-right-width: 2.25em;
-  border-bottom-color: #00549C;
-  border-bottom-style: solid;
-  border-bottom-width: 2.25em;
-  border-left-color: #00549C;
-  border-left-style: solid;
-  border-left-width: 2.25em;
-  border-image-source: initial;
-  border-image-slice: initial;
-  border-image-width: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial; }
 
 @media only screen and (max-width: 1079px) and (min-width: 981px) {
   body {

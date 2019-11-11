@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="refresh" content="10;url=index.html" />
+    <!-- <meta http-equiv="refresh" content="10;url=index.html" /> -->
 
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome/all.css">
@@ -17,41 +17,51 @@
 <body>
 
     <div class="row text-center">
-        <div class="col-2 offset-5 ">
+        <div class="col-12">
+            <img src="./img/index.png">
+        </div>
+        <div class="col-12">
             <div class="logo">
-                <img src="img/logo-dipreca.svg">
+                <img src="img/logo.png">
             </div>
         </div>
-        <div class="col-12 logos-other">
-            <img src="img/logos.svg">
-        </div>
+
         <div class="col-8 offset-2 tittle-dipreca">
-            Dirección de Previsión de Carabineros de Chile
+            <h1>Hola</h1>
+            <h4>Ingresa tu rut</h4>
         </div>
 
         <form class="form-signin">
 
+            <div class="row">
+                <div class="col-9">
+                    <input type="text" id="rut" class="board  form-control animated bounceIn" placeholder="Ej: 12345678" required autofocus>
+                </div>
+                <div class="col-3">
+                    <input type="text" id="rut" class="board form-control  board animated bounceIn" placeholder="K" required autofocus>
+                </div>
+                <div class="col-10 offset-1"> <button class="btn-login" type="submit" onclick="window.location='menu.html'">Ingresar</button></div>
+                <div class="col-10 offset-1"> <button class="btn-login volver">Borrar</button></div>
+            </div>
 
-            <input type="text" id="user" class="form-control animated bounceIn" placeholder="Usuario" required autofocus>
 
 
-            <input type="password" id="Password" class="form-control animated bounceIn" placeholder="Contraseña" required>
 
-            <button class="btn-login" type="submit" onclick="window.location='menu.html'">Ingresar</button>
+
         </form>
 
 
     </div>
 
     <footer>
-        <div class="col-4 offset-4 text-center no-button">
-            <img src="img/footer.svg">
-        </div>
+        <div class="footer-blue"></div>
+        <div class="footer-grey"></div>
     </footer>
 
     <script src="js/bootstrap/bootstrap.min.js "></script>
     <script src="js/jquery-1.11.1.js "></script>
-    <script src="js/createjs.min.js"></script>
+
+
 
 </body>
 

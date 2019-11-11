@@ -57,7 +57,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 300px;
+    height: 3rem;
     color: white;
     img {
         width: 200px;
@@ -67,10 +67,29 @@ footer {
     }
 }
 
+.footer {
+    &-blue {
+        background-color: $primary-color;
+        height: 2rem;
+        width: 100vw;
+    }
+    &-grey {
+        background-color: $secondary-color;
+        height: 1rem;
+        width: 100vw;
+    }
+}
+
 .logo {
-    width: 150px;
-    margin-top: 20%;
-    margin-bottom: 120%;
+    background-color: $primary-color;
+    height: 10rem;
+    // width: 150px;
+    // margin-top: 20%;
+    // margin-bottom: 120%;
+    img {
+        width: 16rem;
+        margin-top: 2.5rem
+    }
 }
 
 .form-signin {
@@ -88,7 +107,7 @@ footer {
         margin-top: 50px;
         font-size: $font-dipreca;
         border: 3px solid;
-        color: $grey-font;
+        color: $secondary-color;
         @include gob-font-100;
     }
     .form-control:focus {
@@ -96,14 +115,17 @@ footer {
     }
     .btn-login {
         width: 250px;
-        height: 75px;
+        height: 95px;
         margin-top: 10%;
-        border-radius: 25px;
-        background-color: $blue-button;
-        border: 5px solid $blue-button-dark;
+        border-radius: 15px;
+        background-color: $primary-color;
+        border: none;
         color: $text-button;
         font-size: $font-dipreca;
         @include gob-font-600;
+    }
+    .volver {
+        background-color: $secondary-color;
     }
 }
 
@@ -142,27 +164,26 @@ footer {
     }
 }
 
-.spinner-border {
-    width: 10rem;
-    height: 10rem;
-    border: 2.25em solid $blue-button;
-    border-top-color: $blue-button;
-    border-top-style: solid;
-    border-top-width: 2.25em;
-    border-right-color: transparent;
-    border-right-style: solid;
-    border-right-width: 2.25em;
-    border-bottom-color: $blue-button;
-    border-bottom-style: solid;
-    border-bottom-width: 2.25em;
-    border-left-color: $blue-button;
-    border-left-style: solid;
-    border-left-width: 2.25em;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-}
-
-@import "responsive.scss";
+// .spinner-border {
+//     width: 10rem;
+//     height: 10rem;
+//     border: 2.25em solid $blue-button;
+//     border-top-color: $blue-button;
+//     border-top-style: solid;
+//     border-top-width: 2.25em;
+//     border-right-color: transparent;
+//     border-right-style: solid;
+//     border-right-width: 2.25em;
+//     border-bottom-color: $blue-button;
+//     border-bottom-style: solid;
+//     border-bottom-width: 2.25em;
+//     border-left-color: $blue-button;
+//     border-left-style: solid;
+//     border-left-width: 2.25em;
+//     border-image-source: initial;
+//     border-image-slice: initial;
+//     border-image-width: initial;
+//     border-image-outset: initial;
+//     border-image-repeat: initial;
+// }
+@import "responsive.scss"
