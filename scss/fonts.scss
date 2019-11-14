@@ -1,29 +1,29 @@
 @font-face {
-    font-family: "gobCL";
-    font-style: normal;
-    font-weight: 100;
-    src: local("gobCL-light"), local("gobCL-light"), url("../css/gobCL/gobCL_Light.otf") format("otf");
-}
-
-@font-face {
-    font-family: 'gobCL';
-    font-style: normal;
-    font-weight: 600;
-    src: local("gobCL-Bold"), local("gobCL-Bold"), url("../css/gobCL/gobCL_Bold.otf") format("otf");
-}
-
-@font-face {
-    font-family: 'gobCL';
-    font-style: normal;
-    font-weight: 800;
-    src: local("gobCL-heavy"), local("gobCL-heavy"), url("../css/gobCL/gobCL_Heavy.otf") format("otf");
-}
-
-@font-face {
-    font-family: 'gobCL';
+    font-family: "opensans";
     font-style: normal;
     font-weight: 300;
-    src: local("gobCL-regular"), local("gobCL-regular"), url("../css/gobCL/gobCL_Regular.otf") format("otf");
+    src: local("opensans-light"), local("opensans-light"), url("../css/open-sans/OpenSans-Light.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'opensans';
+    font-style: normal;
+    font-weight: 600;
+    src: local("opensans-bold"), local("opensans-bold"), url("../css/open-sans/OpenSans-Bold") format("ttf");
+}
+
+@font-face {
+    font-family: 'opensans';
+    font-style: normal;
+    font-weight: 800;
+    src: local("opensans-extrabold"), local("opensans-extrabold"), url("../css/open-sans/OpenSans-ExtraBold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'opensans';
+    font-style: normal;
+    font-weight: 400;
+    src: local("opensans-Regular"), local("opensans-Regular"), url("../css/open-sans/OpenSans-Regular.ttf") format("ttf");
 }
 
 .fas {

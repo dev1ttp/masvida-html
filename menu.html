@@ -15,107 +15,79 @@
 <body>
 
     <!-- oncontextmenu="return false;" -->
+    <header>
+        <div class="row">
+            <div class="col-2 mt-4 ml-5">
+                <img src="img/logo.png" width="250px">
+            </div>
+            <div class="col-10"></div>
+        </div>
+    </header>
+
 
     <div class="row text-center">
-
-        <div class="col-8 offset-2 tittle-dipreca">
-            Dirección de Previsión de Carabineros de Chile
+        <div class="col-12 slider">
+            <img src="img/img-1-image.png">
+            <div class="animated bounceInRight slower title-name col-8 offset-4">
+                <h5> hola</h5>
+                <h1 class="white">Nicolás Andrés</h1>
+            </div>
 
         </div>
-        <div class="col-8 offset-2">
-            <button class="btn-menu animated bounceInUp faster" onclick="window.location='pago-pension.html'"><i class="fas fa-file-invoice-dollar"></i><br>
-                Boletas Pago de Pensión</button>
-        </div>
-
-        <div class="col-8 offset-2">
-            <button class="btn-menu animated bounceInUp fast" data-toggle="modal" data-target="#print-text"><i class="fas fa-file-alt"></i><br>Certificado de Rentas</button>
-        </div>
-        <div class="col-8 offset-2">
-            <button class="btn-menu animated bounceInUp" data-toggle="modal" data-target="#print-text"><i class="fas fa-file-powerpoint"></i><br>Informe y Detalle de Préstamos</button>
-        </div>
-        <div class="col-8 offset-2">
-            <button class="btn-menu animated bounceInUp slow" data-toggle="modal" data-target="#print-text"><i class="fas fa-file-alt"></i><br>Certificados de Afiliación</button>
-        </div>
-
-
-
-        <div class="modal fade" id="print-text" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content text-center">
-
-                    <div class="modal-body">
-                        <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:250px; height:277px; margin:0 auto">
-                            <canvas id="canvas" width="250" height="277" style=" display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-                            <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:250px; height:277px; left: 0px; top: 0px; display: block;">
-                            </div>
-                        </div>
-                        <p class="mt-2">Imprimiendo</p>
-                        <span class="text-center">
-                                Si es necesario obtener mayor documentación, favor dirigirse a la plataforma central
-                            </span>
-                    </div>
+        <div class="title-exce col-12">
+            <div class="row shadow-s">
+                <div class="col-2 offset-4">
+                    <h5 class="mt-1"> Excedentes al<br> 04/11/2019</h5>
 
                 </div>
-            </div>
-        </div>
-
-        <div class="modal fade mt-5" id="select-detail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content text-center">
-                    <div class="d-flex justify-content-center pt-3">
-                        <div class="spinner-border " role="status">
-                            <span class="sr-only">Loading...</span>
-
-                        </div>
-
-                    </div>
-                    <p>Cargando</p>
+                <div class="col-2 bor">
+                    <h1 class="white"> $31.665</h1>
                 </div>
             </div>
+
+        </div>
+        <div class="col-8 offset-2 tittle-masvida mt-4 mb-5">
+            <h1> Selecciona un servicio</h1>
+
+        </div>
+        <div class="col-6">
+            <a href="bonos.html"><img class="img-rounded animated bounceIn shadow" src="./img/comprar-bono.png"></a>
+            <p>
+                <h2>Cotizar y comprar<br>Bonos</h2>
+            </p>
+        </div>
+        <div class="col-6">
+            <a href="reembolso-p1.html"><img class="img-rounded animated bounceIn shadow " src="./img/solicitar-reembolso.png"></a>
+            <p>
+                <h2>Solicitar Reembolso</h2>
+            </p>
+        </div>
+        <div class="col-4 offset-4 mt-4">
+            <a href="menu-contacto.html"> <img class="img-rounded animated bounceIn shadow" src="img/datos-beneficiarios.png"></a>
+            <p>
+                <h2>Datos Beneficiarios</h2>
+            </p>
+
         </div>
 
-        <div class="modal fade mt-5" id="select-detail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content text-center">
 
-                    <div class="modal-body">
-                        <span class="pt-2 tittle-dipreca">Seleccione una opción</span>
 
-                        <div class="row pt-5 pb-4">
 
-                            <div class="col-4 offset-2">
-                                <a href="#" data-dismiss="modal"> <i class="fas fa-user select-detail"></i>
-                                    <p class="mt-2">Pensionado</p>
-                                </a>
-                            </div>
-                            <div class="col-4">
-                                <a href="#" data-dismiss="modal"> <i class="fas fa-users select-detail"></i>
-                                    <p class="mt-2">Montepío</p>
-                                </a>
-                            </div>
-                        </div>
 
-                    </div>
 
-                </div>
-            </div>
-        </div>
 
 
 
     </div>
+    <div class="row mt-5">
+        <div class="col-12  text-center">
+            <button class="btn-login shadow" type="submit" onclick="window.location='index.html'"><i class="fas fa-sign-out-alt"></i> Salir</button>
+        </div>
+    </div>
 
     <footer>
-
-        <div class="col-4 offset-4 text-center">
-
-            <button class="btn-out animated bounceIn delay-1s mb-4" onclick="window.location='login.html'">
-                                <i class="fas fa-share-square"></i><br>
-                            Salir
-                        </button>
-
-            <img class="mt-5 foo" src="img/footer.svg">
-        </div>
+        <div class="footer-blue shadow-s"></div>
+        <div class="footer-grey"></div>
     </footer>
     <script src="js/jquery-1.11.1.js "></script>
     <script src="js/bootstrap/bootstrap.min.js "></script>

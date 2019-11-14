@@ -4,16 +4,36 @@
 @import "button.scss";
 body {
     overflow: hidden;
-    height: 100%;
+    height: 100vw;
+    background-color: #F1F1F1;
 }
 
 a:link {
     text-decoration: none
 }
 
-a.focus {
+a:focus {
     outline: none;
     text-decoration: none;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+a:active {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1.1);
 }
 
 html {
@@ -27,30 +47,30 @@ body {
     margin: 0;
     height: 100%;
     margin-bottom: 300px;
-    @include gob-font-300;
+    @include font-300;
 }
 
 .title-welcome {
     font-size: $font-dipreca-big;
     color: $blue-button;
-    @include gob-font-600;
+    @include font-600;
 }
 
-.tittle-dipreca {
+.tittle-masvida {
     font-size: $font-dipreca;
     color: $blue-button;
-    @include gob-font-600;
+    @include font-600;
 }
 
 .welcome {
-    @include gob-font-100;
+    @include font-300;
     color: $blue-button;
     font-size: $font-dipreca-big;
 }
 
 hr {
-    height: 0.5rem;
-    background-color: $blue-button;
+    height: 0.1rem;
+    background-color: $disabled-color;
 }
 
 footer {
@@ -108,31 +128,36 @@ footer {
         font-size: $font-dipreca;
         border: 3px solid;
         color: $secondary-color;
-        @include gob-font-100;
+        @include font-300;
     }
     .form-control:focus {
         z-index: 2;
     }
-    .btn-login {
-        width: 250px;
-        height: 95px;
-        margin-top: 10%;
-        border-radius: 15px;
-        background-color: $primary-color;
-        border: none;
-        color: $text-button;
-        font-size: $font-dipreca;
-        @include gob-font-600;
-    }
-    .volver {
-        background-color: $secondary-color;
-    }
+}
+
+.btn-login {
+    width: 250px;
+    height: 95px;
+    margin-top: 10%;
+    border-radius: 15px;
+    background-color: $primary-color;
+    border: none;
+    color: $text-button;
+    font-size: $font-dipreca;
+    @include font-600;
+}
+
+.volver {
+    background-color: $secondary-color;
 }
 
 .modal {
     &-content {
         border: 10px solid $blue-button;
         margin-top: 60%;
+        align-content: center;
+        width: 80%;
+        margin-left: 10%
     }
     &-dialog {
         max-width: 100%!important;
@@ -140,17 +165,20 @@ footer {
     p {
         color: $blue-button;
         font-size: $font-button;
-        @include gob-font-600;
+        @include font-600;
     }
     span {
-        @include gob-font-100;
+        @include font-300;
         font-size: $font-dipreca;
         color: $grey-font
+    }
+    &-backdrop {
+        background-color: #fff;
     }
 }
 
 .menu-text {
-    @include gob-font-600;
+    @include font-600;
     font-size: $font-button;
     color: $grey-font
 }
@@ -162,6 +190,144 @@ footer {
         color: $blue-button;
         transform: scale(1.2)
     }
+}
+
+header {
+    background-color: $primary-color;
+    height: 120px;
+}
+
+.title-name {
+    position: absolute;
+    margin-top: -200px;
+    background-color: $primary-color;
+    height: 100px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    color: $text-button;
+    font-size: 2.5rem;
+    line-height: 100%;
+    padding: 5px;
+}
+
+.title-exce {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 60px;
+    margin-top: -60px;
+    color: $text-button;
+}
+
+input,
+select,
+textarea {
+    height: 80px;
+    width: 80%;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align-last: center;
+    line-height: 100%;
+    color: grey;
+}
+
+input::placeholder,
+select::placeholder {
+    color: $disabled-color
+}
+
+select::after {
+    text-align: center;
+}
+
+.bar-gral {
+    height: 15rem;
+    padding-top: 2rem;
+    background-color: $text-button;
+}
+
+.exit {
+    position: absolute;
+    margin-top: -50px;
+    padding-left: 40px;
+    border-left: 1px solid #fff;
+    margin-left: 60px;
+}
+
+.botonera {
+    position: absolute;
+    bottom: 100px;
+    width: 102%;
+    text-align: center;
+}
+
+.big {
+    font-size: 15rem;
+}
+
+h1 {
+    @include font-800;
+    font-size: 3rem;
+    ;
+    color: $primary-color;
+}
+
+h2,
+label {
+    @include font-600;
+    font-size: 2rem;
+    ;
+    color: $primary-color;
+}
+
+h4 {
+    @include font-400;
+    color: $text-button;
+    font-size: 2.3rem;
+}
+
+h6 {
+    @include font-600;
+    font-size: 1.5rem;
+    color: $primary-color;
+}
+
+p {
+    @include font-300;
+    color: $primary-color;
+}
+
+.white {
+    color: $text-button;
+}
+
+.bor {
+    border-left: 1px solid #fff;
+    padding-top: 2px
+}
+
+.ok-color {
+    color: $primary-color;
+}
+
+.fail-color {
+    color: $alert-color;
+}
+
+.grey-color {
+    color: $secondary-color
+}
+
+.grey-color-light {
+    color: $disabled-color;
+    font-size: 5rem;
+}
+
+.total {
+    @include font-600;
+    font-size: 6rem;
+    color: $primary-color;
+    margin-bottom: 5rem;
 }
 
 // .spinner-border {
@@ -186,4 +352,133 @@ footer {
 //     border-image-outset: initial;
 //     border-image-repeat: initial;
 // }
+.input-small {
+    width: 0px!important;
+    height: 0px!important;
+}
+
+.small {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    width: 150px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+input[type='radio']:after {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    top: -10px;
+    // left: -1px;
+    position: relative;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid $primary-color;
+}
+
+input[type='radio']:checked:after {
+    width: 35px;
+    height: 35px;
+    border-radius: 18px;
+    top: -11px;
+    // left: -1px;
+    position: relative;
+    background-color: $primary-color;
+    transition-duration: 500ms;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 8px solid white;
+    box-shadow: 0px 0px 0px 3px $primary-color;
+}
+
+input[type='checkbox']:after {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    background-color: #fff;
+    top: -4px;
+    left: 0;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid $primary-color;
+}
+
+input[type='checkbox']:checked:after {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background-color: $primary-color;
+    content: '\2713';
+    font-size: 2rem;
+    top: -5px;
+    font-style: bold;
+    color: #fff;
+    display: inline-block;
+    visibility: visible;
+    transition-duration: 500ms;
+    // border: 8px solid white;
+    box-shadow: 0px 0px 0px 3px $primary-color;
+}
+
+.slider {
+    -webkit-box-shadow: -1px 10px 16px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 16px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 10px 16px -8px rgba(0, 0, 0, 0.75);
+}
+
+.shadow-s {
+    -webkit-box-shadow: -1px -7px 5px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px -7px 5px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px -7px 5px -8px rgba(0, 0, 0, 0.75);
+}
+
+.img-rounded {
+    border-radius: 125px
+}
+
+select {
+    background: url(../img/arrow-down.png) no-repeat #fff right;
+    -webkit-appearance: none;
+    background-position-x: 41rem;
+}
+
+.card-header {
+    background-color: $primary-color;
+    color: $text-button;
+    text-align: left;
+    @include font-800;
+}
+
+.loader {
+    height: 800px;
+    top: 50%;
+    bottom: 50%;
+}
+
+.scan {
+    width: 100%;
+    height: 600px;
+    background-color: aqua
+}
+
+
+/*------------*/
+
+.button-teclado {
+    height: 80px;
+    width: 80px;
+    background-color: $primary-color;
+    color: $text-button;
+    border-radius: 10px;
+    font-size: 2rem;
+    @include font-800;
+    border: none;
+    margin: 0.2rem;
+}
+
 @import "responsive.scss"
