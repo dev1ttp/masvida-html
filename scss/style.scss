@@ -481,4 +481,18 @@ select {
     margin: 0.2rem;
 }
 
+.powered {
+    position: absolute;
+    text-align: right;
+    right: 0;
+    margin-right: 10px;
+    bottom: 17px;
+}
+
+.autocomplete-items {
+    color: $primary-color;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
 @import "responsive.scss"

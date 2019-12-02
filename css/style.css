@@ -475,6 +475,18 @@ select {
   border: none;
   margin: 0.2rem; }
 
+.powered {
+  position: absolute;
+  text-align: right;
+  right: 0;
+  margin-right: 10px;
+  bottom: 17px; }
+
+.autocomplete-items {
+  color: #0085CA;
+  font-size: 1.5rem;
+  line-height: 1.5rem; }
+
 @media only screen and (max-width: 1079px) and (min-width: 981px) {
   body {
     zoom: 80%; }
